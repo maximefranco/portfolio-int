@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+// Libs
+@import 'font-awesome';
+@import 'bootstrap';
+
+/*====================================================*/
+/*============ WordPress Content Classes =============*/
+/*====================================================*/
+body{
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}

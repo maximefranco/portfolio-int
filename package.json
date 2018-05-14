@@ -1,0 +1,27 @@
+{
+  "name": "bootstrap-gulp",
+  "description": "Bootstrap with Gulp for WordPress theme creation",
+  "version": "1.0.0",
+  "author": "FRANCOIS Maxime",
+  "dependencies": {
+    "font-awesome": "^4.7.0"
+  },
+  "devDependencies": {
+    "bootstrap-sass": "^3.3.7",
+    "browser-sync": "^2.18.12",
+    "font-awesome": "^4.7.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-clean-css": "^3.9.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-group-css-media-queries": "^1.2.0",
+    "gulp-load-plugins": "^1.5.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.1",
+    "gulp-uglify": "^3.0.0",
+    "imagesloaded": "^4.1.3",
+    "jquery": "^3.2.1",
+    "json-file": "^0.1.0"
+  }
+}
