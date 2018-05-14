@@ -12,3 +12,17 @@ body{
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
 }
+.navbar-toggle {
+	@media screen and (min-width: 768px) {
+		display: block;
+	}
+}
+.navbar-collapse.collapse {
+    @media screen and (min-width: 768px) {
+		display: none!important;
+		
+		&.in{
+			display: block!important;
+		}
+	}
+}

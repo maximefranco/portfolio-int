@@ -1,5 +1,6 @@
 var gulp = require('gulp'),
     json = require('json-file'),
+    image = require('gulp-image'),
     $ = require('gulp-load-plugins')(),
     browserSync = require('browser-sync').create();
 
@@ -55,7 +56,14 @@ gulp.task('js', function() {
         .pipe(gulp.dest('./js'))
         .pipe(browserSync.stream());
 });
-gulp.task('watch', ['scss', 'js'], function() {
+
+gulp.task('image', function () {
+  gulp.src('./assets/images/*')
+    .pipe(image())
+    .pipe(gulp.dest('./img'));
+});
+
+gulp.task('watch', ['scss', 'js', 'image'], function() {
     /*browserSync.init({
         proxy: proxy,
         host: '10.0.1.73',
@@ -67,5 +75,5 @@ gulp.task('watch', ['scss', 'js'], function() {
     gulp.watch(['./assets/js/**/*.js'], ['js']);
     gulp.watch(['./**/*.php']).on('change', browserSync.reload);
 });
-gulp.task('default', ['scss', 'js', 'watch']);
+gulp.task('default', ['scss', 'js', 'image', 'watch']);
 
